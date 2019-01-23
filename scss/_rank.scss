@@ -1,0 +1,47 @@
+#rank-view{
+  .top-list-wrap {
+    padding: 10px 10px 0;
+    .top-item {
+      background: #fff;
+      margin-bottom:10px; 
+      a {
+        display: block;
+        display: flex;
+        img {
+          display: block;
+          width: 100px;
+          height: 100px;
+        }
+
+        .item-content {
+          flex: 1;
+          position: relative;
+          padding-left: 10px;
+          .topic {
+            padding: 5px 0;
+            font-size: 16px;
+          }
+          .song-detail {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 2px;
+            .song-name {
+              color: #000;
+            }
+          }
+          .topic-arrow {
+            position: absolute;
+            right: 10px;
+            top: 45%;
+          }
+        }
+      }
+    }
+  }
+
+  .list-more {
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+  }
+} 

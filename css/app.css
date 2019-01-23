@@ -1,11 +1,88 @@
 * {
+  padding: 0;
+  margin: 0;
   box-sizing: border-box; }
 
-body {
-  margin: 0; }
+ul, ol {
+  list-style: none; }
 
-h1 {
-  margin: 0; }
+a {
+  text-decoration: none;
+  color: #000; }
+
+body {
+  font: 12px/1.5 "hiragino sans gb",arial;
+  color: #666; }
+
+.mod-two-col-list {
+  margin: 14px 10px 10px; }
+  .mod-two-col-list .list-title {
+    font-size: 16px;
+    color: #000;
+    margin-bottom: 11px;
+    font-weight: normal; }
+  .mod-two-col-list .list-container {
+    margin-right: -8px; }
+    .mod-two-col-list .list-container::after {
+      content: '';
+      display: block;
+      clear: both; }
+    .mod-two-col-list .list-container .list-item {
+      float: left;
+      width: 50%;
+      padding-right: 8px;
+      margin-bottom: 10px; }
+      .mod-two-col-list .list-container .list-item a {
+        background: #fff;
+        display: block; }
+      .mod-two-col-list .list-container .list-item .item-media {
+        position: relative; }
+        .mod-two-col-list .list-container .list-item .item-media img {
+          width: 100%;
+          display: block; }
+        .mod-two-col-list .list-container .list-item .item-media .icon {
+          position: absolute;
+          height: 24px;
+          bottom: 10px;
+          right: 5px;
+          width: 24px;
+          background-position: 0 0;
+          background-image: url(../images/list_sprite.png);
+          background-repeat: no-repeat;
+          background-size: 24px 60px; }
+      .mod-two-col-list .list-container .list-item .item-info {
+        padding: 5px 7px; }
+        .mod-two-col-list .list-container .list-item .item-info h3 {
+          height: 36px;
+          line-height: 18px;
+          white-space: normal;
+          word-wrap: break-word;
+          font-weight: normal; }
+
+.hot-song-list .list-more {
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: #666; }
+
+footer .version-tab {
+  text-align: center;
+  margin-bottom: 16px; }
+  footer .version-tab a {
+    color: #666; }
+
+footer .footer-logo {
+  display: block;
+  width: 82px;
+  height: 24px;
+  margin: 0 auto 10px;
+  background-image: url(../images/logo_footer.png);
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+footer .copyright {
+  font-size: 10px;
+  text-align: center; }
 
 #header {
   display: flex;
@@ -17,5 +94,70 @@ h1 {
   #header #logo {
     height: 25px; }
 
+.qq-slider {
+  width: 100%;
+  overflow: hidden; }
+  .qq-slider .qq-slider-item > a {
+    display: block; }
+    .qq-slider .qq-slider-item > a img {
+      width: 100%;
+      display: block; }
+  .qq-slider .qq-slider-wrap {
+    position: relative;
+    display: flex;
+    transition: .3s; }
+
+.navbar {
+  display: flex;
+  justify-content: space-around; }
+  .navbar li {
+    width: 33.33%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center; }
+    .navbar li.current {
+      border-bottom: 2px solid #31c27c;
+      color: #31c27c; }
+
+#rank-view .top-list-wrap {
+  padding: 10px 10px 0; }
+  #rank-view .top-list-wrap .top-item {
+    background: #fff;
+    margin-bottom: 10px; }
+    #rank-view .top-list-wrap .top-item a {
+      display: block;
+      display: flex; }
+      #rank-view .top-list-wrap .top-item a img {
+        display: block;
+        width: 100px;
+        height: 100px; }
+      #rank-view .top-list-wrap .top-item a .item-content {
+        flex: 1;
+        position: relative;
+        padding-left: 10px; }
+        #rank-view .top-list-wrap .top-item a .item-content .topic {
+          padding: 5px 0;
+          font-size: 16px; }
+        #rank-view .top-list-wrap .top-item a .item-content .song-detail {
+          font-size: 14px;
+          color: #666;
+          margin-bottom: 2px; }
+          #rank-view .top-list-wrap .top-item a .item-content .song-detail .song-name {
+            color: #000; }
+        #rank-view .top-list-wrap .top-item a .item-content .topic-arrow {
+          position: absolute;
+          right: 10px;
+          top: 45%; }
+
+#rank-view .list-more {
+  height: 40px;
+  line-height: 40px;
+  text-align: center; }
+
 body {
   background: #f4f4f4; }
+
+.tabs section {
+  display: none; }
+  .tabs section.active {
+    display: block; }

@@ -1,0 +1,233 @@
+{
+  "code": 0,
+  "subcode": 0,
+  "message": "",
+  "default": 0,
+  "data": {
+    "topList": [{
+      "id": 4,
+      "listenCount": 20000000,
+      "picUrl": "http://y.gtimg.cn/music/photo_new/T003R300x300M0000013NMM12YLgpE.jpg",
+      "songList": [{
+        "singername": "吴青峰",
+        "songname": "我们"
+      }, {
+        "singername": "逃跑计划",
+        "songname": "你的爱情"
+      }, {
+        "singername": "杨坤",
+        "songname": "要死就一定要死在你手里"
+      }],
+      "topTitle": "巅峰榜·流行指数",
+      "type": 0
+    }, {
+      "id": 26,
+      "listenCount": 20000000,
+      "picUrl": "http://y.gtimg.cn/music/photo_new/T003R300x300M000003UFY494DSnAZ.jpg",
+      "songList": [{
+        "singername": "胡夏/郁可唯",
+        "songname": "知否知否"
+      }, {
+        "singername": "林俊杰",
+        "songname": "不为谁而作的歌"
+      }, {
+        "singername": "G.E.M. 邓紫棋",
+        "songname": "光年之外"
+      }],
+      "topTitle": "巅峰榜·热歌",
+      "type": 0
+    }, {
+      "id": 27,
+      "listenCount": 15800000,
+      "picUrl": "http://y.gtimg.cn/music/photo_new/T003R300x300M000002Wuvy52auVC2.jpg",
+      "songList": [{
+        "singername": "谢霆锋/王嘉尔",
+        "songname": "深渊"
+      }, {
+        "singername": "Westlife",
+        "songname": "Hello My Love"
+      }, {
+        "singername": "阿信",
+        "songname": "一半人生"
+      }],
+      "topTitle": "巅峰榜·新歌",
+      "type": 0
+    }, {
+      "id": 58,
+      "listenCount": 6714020,
+      "picUrl": "http://y.gtimg.cn/music/photo_new/T003R300x300M000001y2bXv2zgFVi.jpg",
+      "songList": [{
+        "singername": "王嘉尔/ICE",
+        "songname": "Red"
+      }, {
+        "singername": "GAI/艾热",
+        "songname": "永不独行"
+      }, {
+        "singername": "G.E.M. 邓紫棋/艾热",
+        "songname": "光年之外 (热爱版)"
+      }],
+      "topTitle": "说唱榜",
+      "type": 0
+    }, {
+      "id": 28,
+      "listenCount": 19700000,
+      "picUrl": "http://y.gtimg.cn/music/photo_new/T003R300x300M000003NTlgb0k45lx.jpg",
+      "songList": [{
+        "singername": "曲肖冰",
+        "songname": "天亮以前说再见"
+      }, {
+        "singername": "221小伙伴",
+        "songname": "遥远的你 (正式版)"
+      }, {
+        "singername": "郭聪明",
+        "songname": "你会遇见更好的人"
+      }],
+      "topTitle": "巅峰榜·网络歌曲",
+      "type": 0
+    }, {
+      "id": 5,
+      "listenCount": 3916540,
+      "picUrl": "http://y.gtimg.cn/music/photo_new/T003R300x300M000004GCdu91WJELQ.jpg",
+      "songList": [{
+        "singername": "胡夏/郁可唯",
+        "songname": "知否知否"
+      }, {
+        "singername": "胡夏",
+        "songname": "只问你肯不肯"
+      }, {
+        "singername": "许艺娜",
+        "songname": "如梦令"
+      }],
+      "topTitle": "巅峰榜·内地",
+      "type": 0
+    }, {
+      "id": 6,
+      "listenCount": 1940000,
+      "picUrl": "http://y.gtimg.cn/music/photo_new/T003R300x300M000001rYAXi0ttkSP.jpg",
+      "songList": [{
+        "singername": "阿信",
+        "songname": "一半人生"
+      }, {
+        "singername": "陈立农",
+        "songname": "有梦可待"
+      }, {
+        "singername": "田馥甄",
+        "songname": "墨绿的夜"
+      }],
+      "topTitle": "巅峰榜·港台",
+      "type": 0
+    }, {
+      "id": 3,
+      "listenCount": 9200000,
+      "picUrl": "http://y.gtimg.cn/music/photo_new/T003R300x300M000001ElyTu3O4RyB.jpg",
+      "songList": [{
+        "singername": "Westlife",
+        "songname": "Hello My Love"
+      }, {
+        "singername": "Sam Smith/Normani",
+        "songname": "Dancing With A Stranger"
+      }, {
+        "singername": "Backstreet Boys",
+        "songname": "No Place"
+      }],
+      "topTitle": "巅峰榜·欧美",
+      "type": 0
+    }, {
+      "id": 16,
+      "listenCount": 4674380,
+      "picUrl": "http://y.gtimg.cn/music/photo_new/T003R300x300M000003RRaQ92xLK0R.jpg",
+      "songList": [{
+        "singername": "iKON (아이콘)",
+        "songname": "I'M OK"
+      }, {
+        "singername": "에디킴 (Eddy Kim)",
+        "songname": "우린 어쩌면 (我们或许)"
+      }, {
+        "singername": "김청하 (金请夏)",
+        "songname": "벌써 12시"
+      }],
+      "topTitle": "巅峰榜·韩国",
+      "type": 0
+    }, {
+      "id": 29,
+      "listenCount": 2373040,
+      "picUrl": "http://y.gtimg.cn/music/photo_new/T003R300x300M000000AIm1n252We3.jpg",
+      "songList": [{
+        "singername": "胡夏/郁可唯",
+        "songname": "知否知否"
+      }, {
+        "singername": "周深",
+        "songname": "随风"
+      }, {
+        "singername": "胡夏",
+        "songname": "只问你肯不肯"
+      }],
+      "topTitle": "巅峰榜·影视金曲",
+      "type": 0
+    }, {
+      "id": 17,
+      "listenCount": 1493018,
+      "picUrl": "http://y.gtimg.cn/music/photo_new/T003R300x300M000001g5tCw2q8BPg.jpg",
+      "songList": [{
+        "singername": "majiko (まじ娘)",
+        "songname": "狂おしいほど僕には美しい (疯狂即美丽)"
+      }, {
+        "singername": "Reol",
+        "songname": "mede:mede"
+      }, {
+        "singername": "THE RAMPAGE from EXILE TRIBE (ザ・ランページ・フロム・エグザイル・トライブ)",
+        "songname": "DOWN BY LAW"
+      }],
+      "topTitle": "巅峰榜·日本",
+      "type": 0
+    }, {
+      "id": 201,
+      "listenCount": 197072,
+      "picUrl": "http://y.gtimg.cn/music/photo_new/T003R300x300M000003uMeDL1l6cjr.jpg",
+      "songList": [{
+        "singername": "蔡徐坤",
+        "songname": "Wait Wait Wait"
+      }, {
+        "singername": "薛之谦",
+        "songname": "肆无忌惮"
+      }, {
+        "singername": "GAI",
+        "songname": "在下霍元甲 (《霍元甲之精武天下》电影宣传曲)"
+      }],
+      "topTitle": "巅峰榜·MV",
+      "type": 0
+    }, {
+      "id": 52,
+      "listenCount": 1050980,
+      "picUrl": "http://y.gtimg.cn/music/photo_new/T003R300x300M0000042gf6G4Sa8wf.jpg",
+      "songList": [{
+        "singername": "尧十三",
+        "songname": "很久"
+      }, {
+        "singername": "陈硕子",
+        "songname": "这世界再没有你了"
+      }, {
+        "singername": "宋黛霆",
+        "songname": "寻"
+      }],
+      "topTitle": "巅峰榜·腾讯音乐人原创榜",
+      "type": 0
+    }, {
+      "id": 36,
+      "listenCount": 3367400,
+      "picUrl": "http://y.gtimg.cn/music/photo_new/T003R300x300M000000kLGvo4Bruje.jpg",
+      "songList": [{
+        "singername": "K.D",
+        "songname": "关键词"
+      }, {
+        "singername": "大天使 icey",
+        "songname": "知否知否"
+      }, {
+        "singername": "麓七",
+        "songname": "光年之外"
+      }],
+      "topTitle": "巅峰榜·K歌金曲",
+      "type": 0
+    }]
+  }
+}

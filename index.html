@@ -9,8 +9,95 @@
 </head>
 <body>
   <header id="header">
+    <!-- 写这个h1并隐藏是为了给搜索引擎使用 -->
     <h1>QQ 音乐</h1>
     <img src="images/logo.png" alt="Logo" id="logo">
   </header>
+  <ul class="navbar">
+    <li  data-view="#recommand-view">推荐</li>
+    <li class="current" data-view="#rank-view">排行榜</li>
+    <li data-view="#search-view">搜索</li>
+  </ul>
+  <div class="tabs">
+    <section id="recommand-view" >
+      <div class="qq-slider"></div>
+      <div class="radio mod-two-col-list">
+        <h2 class="list-title">电台</h2>
+        <ul class="list-container"></ul>
+      </div>
+      <div class="hot-song-list mod-two-col-list">
+        <h2 class="list-title">热门歌单</h2>
+        <ul class="list-container"></ul>
+        <p class="list-more">
+          <a href="#">去客户端发现更多好音乐 ></a>
+        </p>
+      </div>
+      <footer>
+        <div class="version-tab">
+          <a href="https://y.qq.com/?ADTAG=myqq&nomobile=1#type=index">查看电脑版网页</a>
+        </div>
+        <div class="footer-logo"></div>
+        <p class="copyright">Copyright © 1998 - <span>2019</span> Tencent. All Rights Reserved.</p>
+        <p class="copyright">联系电话：0755-86013388 QQ群：55209235</p>
+      </footer>
+    </section>
+    <section id="rank-view" class="active">
+      <ul class="top-list-wrap">
+        <li class="top-item">
+          <a href="#">
+            <div class="item-img"><img src="images/static.jpg" data-src="http://y.gtimg.cn/music/photo_new/T003R300x300M0000013NMM12YLgpE.jpg" alt=""></div>
+            <div class="item-content">
+              <div class="topic">巅峰榜·流行指数</div>
+              <div class="song-detail">1 
+                <span class="song-name">我们</span> - 
+                <span class="song-author">吴青峰</span>
+              </div>
+              <div class="song-detail">2 
+                <span class="song-name">我们</span> - 
+                <span class="song-author">吴青峰</span>
+              </div>
+              <div class="song-detail">3 
+                <span class="song-name">我们</span> - 
+                <span class="song-author">吴青峰</span>
+              </div>
+              <i class="topic-arrow">></i>
+            </div>
+          </a>
+        </li>
+        <li class="top-item">
+            <a href="#">
+              <div class="item-img"><img src="images/static.jpg" data-src="http://y.gtimg.cn/music/photo_new/T003R300x300M0000013NMM12YLgpE.jpg" alt=""></div>
+              <div class="item-content">
+                <div class="topic">巅峰榜·流行指数</div>
+                <div class="song-detail">1 
+                  <span class="song-name">我们</span> - 
+                  <span class="song-author">吴青峰</span>
+                </div>
+                <div class="song-detail">2 
+                  <span class="song-name">我们</span> - 
+                  <span class="song-author">吴青峰</span>
+                </div>
+                <div class="song-detail">3 
+                  <span class="song-name">我们</span> - 
+                  <span class="song-author">吴青峰</span>
+                </div>
+                <i class="topic-arrow">></i>
+              </div>
+            </a>
+          </li>
+      </ul>
+      <div class="list-more">
+        <a href="#">去客户端发现更多好音乐 ></a>
+      </div>
+    </section>
+    <section id="search-view">
+      search
+    </section>
+  </div>
+  
+  <script src="scripts/common.js"></script>
+  <script src="scripts/carousel.js"></script>
+  <script src="scripts/lazyload.js"></script>
+  <script src="scripts/app.js"></script>
 </body>
 </html>

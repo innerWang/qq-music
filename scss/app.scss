@@ -2,7 +2,19 @@
 @import "reset";
 @import "rec";
 @import "header";
+@import "slider";
+@import "navbar";
+@import "rank";
 
 body{
   background: $body-background;
+}
+
+.tabs {
+  section {
+    display: none;
+    &.active{
+      display: block;
+    }
+  }
 }

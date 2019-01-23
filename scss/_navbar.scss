@@ -1,0 +1,15 @@
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  li {
+    width: 33.33%;
+    height: $navbar-item-height;
+    line-height: $navbar-item-height;
+    text-align: center;
+    &.current {
+      border-bottom: 2px solid $navbar-item-color;
+      color: $navbar-item-color;
+    }
+  }
+
+}
