@@ -43,9 +43,11 @@ export class MusicPlayer {
 
   onPlay(target){
     if(this.fetching) return 
+    alert('暂时无法播放,请点击列表图标隐藏播放界面') 
+    return
     target.classList.toggle('icon-pause')
     target.classList.toggle('icon-play')
-   // this.$audio.play()
+    this.$audio.play()
     this.progressBar.start()
     this.lyricsPlayer.start()
   }
@@ -188,7 +190,7 @@ class LyricsPlayer{
     })
 
     lyricsArr.sort(this.byField('time'))
-    console.log(lyricsArr)
+    //console.log(lyricsArr)
 
     this.lyricsArr = lyricsArr
 

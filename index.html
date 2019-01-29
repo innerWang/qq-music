@@ -16,12 +16,12 @@
     <span class="player-btn">播放器</span>
   </header>
   <ul class="navbar">
-    <li  data-view="#recommend-view">推荐</li>
+    <li  class="current" data-view="#recommend-view">推荐</li>
     <li  data-view="#rank-view">排行榜</li>
-    <li class="current" data-view="#search-view">搜索</li>
+    <li  data-view="#search-view">搜索</li>
   </ul>
   <div class="tabs">
-    <section id="recommend-view" >
+    <section id="recommend-view" class="active" >
       <div class="qq-slider"></div>
       <div class="radio mod-two-col-list">
         <h2 class="list-title">电台</h2>
@@ -49,7 +49,7 @@
         <a href="#">去客户端发现更多好音乐 ></a>
       </div>
     </section>
-    <section id="search-view" class="active">
+    <section id="search-view" >
       <div class="search-bar">
         <div class="input-wrap">
           <input type="text" id="search" placeholder="搜索歌曲、歌单、专辑">
@@ -68,25 +68,27 @@
     </section>
   </div>
   <div id="player-panel" class="">
-    <div class="panel-header">
-      <img src="images/static.jpg" alt="" class="album-cover">
-      <div class="play-title">
-        <div class="name ellipsis"></div>
-        <div class="author ellipsis"></div>
-      </div>
-      <i class="play iconfont icon-play"></i>
-    </div>
-    <div class="lyric-box">未搜索到歌词</div>
-    <div class="player-footer">
-      <div class="iconfont icon-list"></div>
-      <div class="progress">
-        <div class="current-time">00:00</div>
-        <div class="bar">
-          <div class="progress-now"></div>
+    <div class="player-container">
+      <div class="panel-header">
+        <img src="images/static.jpg" alt="" class="album-cover">
+        <div class="play-title">
+          <div class="name ellipsis"></div>
+          <div class="author ellipsis"></div>
         </div>
-        <div class="total-time">00:00</div>
+        <i class="play iconfont icon-play"></i>
       </div>
-      <div class="actions"><a href="#" class="btn-download">下载这首歌</a></div>
+      <div class="lyric-box">未搜索到歌词</div>
+      <div class="player-footer">
+        <div class="iconfont icon-list"></div>
+        <div class="progress">
+          <div class="current-time">00:00</div>
+          <div class="bar">
+            <div class="progress-now"></div>
+          </div>
+          <div class="total-time">00:00</div>
+        </div>
+        <div class="actions"><a href="#" class="btn-download">下载这首歌</a></div>
+      </div>
     </div>
     <div class="bg-cover"></div>
   </div>

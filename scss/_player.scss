@@ -11,6 +11,11 @@
     opacity: 1;
     transform: translateY(0);
   }
+
+  .player-container {
+    height: 100%;
+    background: rgba(255, 255,255, .3);
+  }
  
   .bg-cover {  
     position: absolute;
@@ -26,7 +31,7 @@
     display: flex;
     padding: 15px;
     align-items: center;
-    background: rgba(0,0,0,.4);
+    background: rgba(0,0,0,.3);
     .album-cover {
       width: 70px;
       height: 70px;
@@ -37,7 +42,6 @@
       max-width: calc(100% - 130px);
       .name {
         font-size: 22px;
-        color: #000;
       }
       .author {
         font-size: 14px;
@@ -46,7 +50,6 @@
     .play {
       margin-left: 10px;
       font-size: 40px;
-      color: #333;
     }
   }
   .lyric-box{
@@ -56,6 +59,7 @@
     padding: 0 10px;
     overflow: hidden;
     font-size: 14px;
+    color: rgba(255,255,255,.6);
     .player-lyrics-lines {
       transition: .6s;
       .player-lyric{
@@ -74,6 +78,7 @@
     position: relative;
     .icon-list {
       position: absolute;
+      color: #333;
       top: -50px;
       right: 10px;
       font-size: 30px;
