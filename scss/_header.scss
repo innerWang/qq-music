@@ -1,5 +1,6 @@
 #header {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   height: $header-height;
   background: $header-background;
@@ -8,5 +9,13 @@
   }
   #logo {
     height: $logo-height;
+  }
+  .player-btn {
+    font-size: 14px;
+    margin-right: 10px;
+    padding: 5px 15px;
+    background: #149c5a;
+    border-radius: 100px;
+    color: #fff;
   }
 }

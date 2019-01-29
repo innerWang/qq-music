@@ -1,5 +1,5 @@
-function lazyload(images){
-  let imgs = [].slice.call(images) //Array.from(images)
+export function lazyload(images){
+  let imgs = [].slice.call(images || document.querySelectorAll('.lazyload')) //Array.from(images)
 
   let onscroll = throttle(function(){
     //console.log(new Date())

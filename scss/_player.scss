@@ -1,0 +1,117 @@
+#player-panel {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  transform: translateY(-100%);
+  transition: .3s;
+  &.show{
+    opacity: 1;
+    transform: translateY(0);
+  }
+ 
+  .bg-cover {  
+    position: absolute;
+    z-index: -1;
+    top: -15px;
+    left: -15px;
+    bottom: -15px;
+    right: -15px;
+    background: url(../images/static.jpg) center/cover no-repeat;
+    filter: blur(5px);
+  }
+  .panel-header{
+    display: flex;
+    padding: 15px;
+    align-items: center;
+    background: rgba(0,0,0,.4);
+    .album-cover {
+      width: 70px;
+      height: 70px;
+      margin-right: 10px;
+    }
+    .play-title {
+      flex: 1;
+      max-width: calc(100% - 130px);
+      .name {
+        font-size: 22px;
+        color: #000;
+      }
+      .author {
+        font-size: 14px;
+      }
+    }
+    .play {
+      margin-left: 10px;
+      font-size: 40px;
+      color: #333;
+    }
+  }
+  .lyric-box{
+    text-align: center;
+    height: calc(100% - 270px);
+    margin: 20px 0;
+    padding: 0 10px;
+    overflow: hidden;
+    font-size: 14px;
+    .player-lyrics-lines {
+      transition: .6s;
+      .player-lyric{
+        height: auto;
+        line-height: 30px;
+        white-space: normal;
+        word-wrap:break-word; 
+        &.active{
+          color: $theme-color;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  .player-footer {
+    position: relative;
+    .icon-list {
+      position: absolute;
+      top: -50px;
+      right: 10px;
+      font-size: 30px;
+    }
+    .progress{
+      display: flex;
+      align-items: center;
+      height: 40px;
+      font-size: 14px;
+      padding: 10px;
+      color: rgba(0,0,0,.8);
+      .bar {
+        flex:1;
+        margin:0 10px;
+        height: 3px;
+        background: rgba(0,0,0,.3);
+        overflow: hidden;
+        .progress-now{
+          background:$theme-color;
+          height: 3px;
+          transform: translateX(-100%);
+        }
+      }
+    }
+    .actions{
+      margin-top: 10px;
+      .btn-download {
+        display: block;
+        font-size: 20px;
+        height: 40px;
+        line-height: 40px;
+        margin: 0 50px;
+        border-radius: 100px;
+        background: $theme-color;
+        color: #f1f1f1;
+        text-align: center;
+      }
+    }
+  }
+
+}

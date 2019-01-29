@@ -1,5 +1,6 @@
 #rank-view{
   .top-list-wrap {
+    width: 100%;
     padding: 10px 10px 0;
     .top-item {
       background: #fff;
@@ -14,7 +15,7 @@
         }
 
         .item-content {
-          flex: 1;
+          width: calc(100% - 100px);
           position: relative;
           padding-left: 10px;
           .topic {
@@ -22,16 +23,18 @@
             font-size: 16px;
           }
           .song-detail {
-            font-size: 14px;
-            color: #666;
+            font-size: 12px;
+            color: rgba(0,0,0,.5);
             margin-bottom: 2px;
             .song-name {
               color: #000;
+              margin-left: 8px;
+              margin-right: 5px;
             }
           }
           .topic-arrow {
             position: absolute;
-            right: 10px;
+            right: 6px;
             top: 45%;
           }
         }
@@ -40,8 +43,8 @@
   }
 
   .list-more {
-    height: 40px;
-    line-height: 40px;
+    height: 50px;
+    line-height: 50px;
     text-align: center;
   }
 } 

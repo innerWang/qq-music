@@ -1,62 +1,44 @@
-(async function(){
+import './tapswitch.js'
+import {Recommend} from './recommend.js'
+import {Toplist} from './toplist.js'
+import {Search} from './search.js'
+import {MusicPlayer} from './player.js'
 
-  fetch('/json/rec.json')
-    .then( res=> res.json())
-    .then(renderRecm)
-
-  function renderRecm(originalData){
-    renderSlider(originalData.data.slider)
-    renderRadio(originalData.data.radioList)
-    console.log($$('.lazyload'))
-    lazyload($$('.lazyload'))
-  }
-  
-  function renderSlider(sliderData){
-    let slideItems =  sliderData.map(item => {
-      return {link: item.linkUrl,img:item.picUrl}
-    })
-    new Slider({
-      el: $('.qq-slider'),
-      slideItems
-    })
-  }
-
-  function renderRadio(radioData){
-    $('.radio .list-container').innerHTML =  radioData.map(item => {
-      return `<li class="list-item">
-      <a href="#">
-        <div class="item-media">
-          <img class="lazyload" src="images/static.jpg" data-src="${item.picUrl}" alt="">
-          <span class="icon"></span>
-        </div>
-        <div class="item-info">
-          <h3>${item.Ftitle}</h3>
-        </div>
-      </a>
-    </li>`
-    }).join('')
-
+let indexOfTabChanged = false
+let recommend = new Recommend(document.querySelector('#recommand-view')).launch()
+let toplist = new Toplist(document.querySelector('#rank-view ')).launch()
+let searchPage = new Search(document.querySelector('#search-view'))
+let player = new MusicPlayer(document.querySelector('#player-panel'))
     
+
+setInterval(function(){
+  if(indexOfTabChanged){
+    console.log('tab changed...')
+    window.dispatchEvent(new Event('scroll'))
+    indexOfTabChanged = false
   }
+},100)
 
-  // tab切换功能
-  $('.navbar').addEventListener('click',function(e){
-    if(e.target.nodeName.toLowerCase()=== 'li'){
-      let target = e.target
-      ;[].forEach.call(target.parentElement.children,ele => {
-        ele.classList.remove('current')
-      })
-      target.classList.add('current')
+document.querySelector('#header .player-btn').addEventListener('click',function(){
+  player.show()
+})
 
-      let content = $(target.dataset.view)
-      if(content){
-        [].forEach.call(content.parentElement.children,ele => {
-          ele.classList.remove('active')
-        })
-        content.classList.add('active')
-      }
-    }
-  })
-  
 
-})()
+function onHashChange(){
+  let hash = location.hash
+  if(/^#player-panel\?.+/.test(hash)){
+    let matches = hash.slice(hash.indexOf('?')+1).match(/(\w+)=([^&]+)/g)
+    let options = matches && matches.reduce((recData,curVal)=>{
+      let arr = curVal.split('=')
+      recData[arr[0]] = decodeURIComponent(arr[1])
+      return recData 
+    },{})
+    player.play(options)
+  }else{
+    player.hide()
+  }
+}
+
+onHashChange()
+window.addEventListener('hashchange',onHashChange)
+

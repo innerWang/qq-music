@@ -1,0 +1,122 @@
+#search-view {
+  .search-bar {
+    display:flex;
+    padding: 10px;
+    font-size: 14px;
+    background: #f4f4f4;
+    .input-wrap {
+      flex:1;
+      position: relative;
+      border-radius: 3px;
+      background: #fff;
+      height: 36px;
+      padding: 8px 12px 8px 35px;
+      #search{
+        height: 20px;
+        line-height: 20px;
+        width: 100%;
+        color: rgba(0,0,0,.3);
+        border: none;
+
+        outline: none;
+      }
+  
+      .icon-search{
+        position: absolute;
+        top: 9px;
+        left: 10px;
+        width: 18px;
+        height: 18px;
+        background-image: url(../images/icon_search.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-indent: -999px;
+      }
+    }
+    .search-btn {
+      height: 36px;
+      line-height: 36px;
+      margin-left: 10px;
+      padding: 0 10px;
+      border-radius: 5px;
+      color: #fff;
+      background: #f39724;
+
+    }
+    
+  }
+
+  .search-results {
+    .search-song-list{
+      li {
+        background: #fff;
+        a {
+          position: relative;
+          display: block;
+          padding-left: 56px;
+          height: 56px;
+          border-top: 1px solid #e5e5e5;
+          .icon-music {
+            position: absolute;
+            top: 18px;
+            left: 18px;
+            width: 22px;
+            height: 20px;
+            background-position: 0 0;
+            background-image: url(../images/music.png);
+            background-repeat: no-repeat;
+            background-size: 22px 30px;
+          }
+          .main-title {
+            margin: 10px 0 4px;
+            line-height: 18px;
+            font-size: 16px;
+            font-weight: normal;
+            color: #000;
+          }
+          .sub-title {
+            color: #808080;
+          }
+        }
+        
+        &:last-child>a {
+          border-bottom: 1px solid #e5e5e5;
+        }
+      }
+    }
+  }
+
+  .search-loading {
+    display: none;
+    height: 55px;
+    font-size: 14px;
+    justify-content: center;
+    align-items: center;
+    &.show {
+      display:flex;
+    }
+    .icon-loading{
+      display: inline-block;
+      height: 20px;
+      width: 20px;
+      background-size: 20px 20px;
+      background-image: url(../images/icon_loading.png);
+      /* rotate 是下面定义的动作 linear 是均匀的旋转 infinite 是无休止的*/
+			animation: 1s rotate linear infinite;
+    }
+    
+    .loading{
+      margin-left: 5px;
+    }
+    .load-done {
+      &.hide {
+        display: none;
+      }
+    }
+  }
+}
+
+@keyframes rotate {
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(360deg);}
+}

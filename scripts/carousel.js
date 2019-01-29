@@ -1,19 +1,19 @@
-class Slider {
+export class Slider {
   constructor(options = {}){
     this.$el = options.el
     this.slideItems = options.slideItems
     this.interval = options.interval || 3000
+    this.duration = options.duration || 300
     this.index = 0
     this.render()
     this.start()
   }
 
   render(){
-   // console.log('render...')
     this.$el.innerHTML = `<div class="qq-slider-wrap"></div>`
     this.$wrap = this.$el.firstElementChild
+    this.$wrap.style.transitionDuration = `${this.duration}ms`
     this.$wrap.style.width = `${this.slideItems.length*100}%`
-   // console.log(this.$wrap.style.width)
     this.$wrap.innerHTML = this.slideItems.map(item => 
       `<div class="qq-slider-item">
       <a href="${item.link}">
@@ -30,7 +30,6 @@ class Slider {
 
   next(){
     this.index +=1
-  //  console.log('next...',this.index )
     if(this.index === this.slideItems.length){
       this.index = 0
     }
