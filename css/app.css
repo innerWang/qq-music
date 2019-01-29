@@ -289,7 +289,7 @@ footer .copyright {
     transform: translateY(0); }
   #player-panel .player-container {
     height: 100%;
-    background: rgba(255, 255, 255, 0.3); }
+    background: rgba(255, 255, 255, 0.6); }
   #player-panel .bg-cover {
     position: absolute;
     z-index: -1;
@@ -303,7 +303,8 @@ footer .copyright {
     display: flex;
     padding: 15px;
     align-items: center;
-    background: rgba(0, 0, 0, 0.3); }
+    color: #f1f1f1;
+    background: rgba(0, 0, 0, 0.2); }
     #player-panel .panel-header .album-cover {
       width: 70px;
       height: 70px;
@@ -324,8 +325,7 @@ footer .copyright {
     margin: 20px 0;
     padding: 0 10px;
     overflow: hidden;
-    font-size: 14px;
-    color: rgba(255, 255, 255, 0.6); }
+    font-size: 14px; }
     #player-panel .lyric-box .player-lyrics-lines {
       transition: .6s; }
       #player-panel .lyric-box .player-lyrics-lines .player-lyric {

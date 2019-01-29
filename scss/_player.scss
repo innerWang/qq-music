@@ -14,7 +14,7 @@
 
   .player-container {
     height: 100%;
-    background: rgba(255, 255,255, .3);
+    background: rgba(255, 255,255, .6);
   }
  
   .bg-cover {  
@@ -31,7 +31,8 @@
     display: flex;
     padding: 15px;
     align-items: center;
-    background: rgba(0,0,0,.3);
+    color: #f1f1f1;
+    background: rgba(0,0,0,.2);
     .album-cover {
       width: 70px;
       height: 70px;
@@ -59,7 +60,6 @@
     padding: 0 10px;
     overflow: hidden;
     font-size: 14px;
-    color: rgba(255,255,255,.6);
     .player-lyrics-lines {
       transition: .6s;
       .player-lyric{
