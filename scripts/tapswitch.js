@@ -1,4 +1,6 @@
   // tab切换功能
+  
+  let indexOfTabChanged = false
   document.querySelector('.navbar').addEventListener('click',function(e){
     if(e.target.nodeName.toLowerCase()=== 'li'){
       let target = e.target
@@ -19,3 +21,12 @@
       }
     }
   })
+
+
+setInterval(function(){
+  if(indexOfTabChanged){
+    console.log('tab changed...')
+    window.dispatchEvent(new Event('scroll'))
+    indexOfTabChanged = false
+  }
+},100)

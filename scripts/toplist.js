@@ -1,19 +1,19 @@
+import {lazyload} from './lazyload.js'
 export class Toplist{
   constructor(el){
     this.$el = el
+    this.launch()
   }
 
   launch(){
     fetch('https://qq-music-api.now.sh/top')
     .then( res=> res.json())
     .then(json => this.list = json.data.topList)
-    .then(this.renderRank)
-
-    return this
+    .then(() => this.renderRank())
   }
 
-  renderRank(originalData){
-    this.$el.querySelector('.top-list-wrap').innerHTML=originalData.data.topList.map(item=>{
+  renderRank(){
+    this.$el.querySelector('.top-list-wrap').innerHTML=this.list.map(item=>{
       return `<li class="top-item">
       <a href="#">
         <div class="item-img"><img class="lazyload" src="images/static.jpg" data-src="${item.picUrl}" alt=""></div>

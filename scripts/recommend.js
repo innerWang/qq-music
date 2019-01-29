@@ -3,14 +3,14 @@ import {lazyload} from './lazyload.js'
 export class Recommend{
   constructor(el){
     this.$el = el
+    this.launch()
   }
 
   launch(){
     fetch('https://qq-music-api.now.sh')
     .then( res=> res.json())
     .then(json => this.json = json)
-    .then(this.renderRecm)
-    return this
+    .then(() => this.renderRecm())
   }
 
   renderRecm(){

@@ -2,10 +2,10 @@ export class MusicPlayer {
   constructor(el){
     this.$el = el
     this.$play= this.$el.querySelector('.panel-header .play')
-    this.$list= this.$el.querySelector('.player-footer .icon-list')
+   // this.$list= this.$el.querySelector('.player-footer .icon-list')
     // addEventListener的第二个参数是对象时，会自动在对象中寻找hadleEvent方法
-    this.$play.addEventListener('click',this)
-    this.$list.addEventListener('click',this)
+    this.$el.addEventListener('click',this)
+    //this.$list.addEventListener('click',this)
     this.$audio = this.createAudio()
     this.progressBar = new ProgressBar(this.$el.querySelector('.player-footer .progress'),this.$audio)
     this.lyricsPlayer = new LyricsPlayer(this.$el.querySelector('.lyric-box'),this.$audio)
@@ -17,7 +17,7 @@ export class MusicPlayer {
     let audio = document.createElement('audio')
     audio.id = `player-${Math.floor(Math.random() * 100)}-${+new Date()}`
     audio.addEventListener('ended',()=>{
-      this.$audio.play()
+    //  this.$audio.play()
       this.lyricsPlayer.restart()
       this.progressBar.restart()
     })
@@ -45,7 +45,7 @@ export class MusicPlayer {
     if(this.fetching) return 
     target.classList.toggle('icon-pause')
     target.classList.toggle('icon-play')
-    this.$audio.play()
+   // this.$audio.play()
     this.progressBar.start()
     this.lyricsPlayer.start()
   }
@@ -53,7 +53,7 @@ export class MusicPlayer {
   onPause(target){
     target.classList.toggle('icon-pause')
     target.classList.toggle('icon-play')
-    this.$audio.pause()
+   // this.$audio.pause()
     this.progressBar.stop()
     this.lyricsPlayer.stop()
   }
