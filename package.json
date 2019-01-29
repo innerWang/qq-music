@@ -2,9 +2,11 @@
   "name": "qq-music",
   "version": "1.0.0",
   "description": "QQ Music",
-  "main": "index.js",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx webpack && node-sass --output-style compressed scss/app.scss > dist/app.css && autoprefixer-cli -o dist/app.css dist/app.css",
+    "watch-css": "node-sass -wro css scss/"
   },
   "repository": {
     "type": "git",
@@ -26,7 +28,10 @@
     "request-promise": "^4.2.2"
   },
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.7.0"
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
+    "babel-loader": "^8.0.0-beta.0",
+    "webpack": "^4.29.0",
+    "webpack-cli": "^3.2.1"
   }
 }
