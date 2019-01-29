@@ -5,7 +5,6 @@ export class MusicPlayer {
    // this.$list= this.$el.querySelector('.player-footer .icon-list')
     // addEventListener的第二个参数是对象时，会自动在对象中寻找hadleEvent方法
     this.$el.addEventListener('click',this)
-    this.songid = ''
     //this.$list.addEventListener('click',this)
     this.$audio = this.createAudio()
     this.progressBar = new ProgressBar(this.$el.querySelector('.player-footer .progress'),this.$audio)
@@ -70,7 +69,7 @@ export class MusicPlayer {
     this.$el.querySelector('.bg-cover').style.backgroundImage = `url(${coverUrl})`
 
     if (options.songid) {
-      if (this.songid !== options.songid) {
+      if ( this.songid && (this.songid !== options.songid)) {
         this.$play.classList.toggle('icon-play')
         this.$play.classList.toggle('icon-pause')
       }
