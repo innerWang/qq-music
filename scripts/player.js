@@ -69,9 +69,9 @@ export class MusicPlayer {
     this.$el.querySelector('.bg-cover').style.backgroundImage = `url(${coverUrl})`
 
     if (options.songid) {
-      if ( this.songid && (this.songid !== options.songid)) {
-        this.$play.classList.toggle('icon-play')
-        this.$play.classList.toggle('icon-pause')
+      if (this.songid !== options.songid){
+        this.$play.classList.add('icon-play')
+        this.$play.classList.remove('icon-pause')
       }
       //http://dl.stream.qqmusic.qq.com/C400003UTRfZ12wGOs.m4a?guid=6092900555&vkey=7462236AE5FD71EB74BE318D0F021B3522EF4644190BA59BB92A7C1DEEDB32A2A489200DA1FA47C5AF18698102E5995BFA5608C6D31DD186&uin=0&fromtag=38
       this.songid = options.songid
